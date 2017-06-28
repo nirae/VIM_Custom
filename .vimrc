@@ -4,6 +4,8 @@ set number
 set autoindent
 " Le nombre d'espace qu'une tabulation prend
 set tabstop=4
+" Oblige à insérer les tabulations comme des caractères plutot que des espaces
+set noexpandtab
 " Affiche la ligne et la colonne courante en bas à droite de l'écran
 set ruler
 " Affiche la commande en cours d'écriture
