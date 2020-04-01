@@ -1,8 +1,3 @@
-" Load all the config files
-runtime! config/**/*.vim
-" pathogen
-call pathogen#infect()
-call pathogen#helptags()
 " Numérotation des lignes
 set number
 " Indentation automatique
@@ -28,8 +23,3 @@ inoremap [ []<left>
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ` ``<left>
-
-" Open NERDTree
-autocmd vimenter * NERDTree
-" Close vim if the last window open is NERDTree 
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
